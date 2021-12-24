@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".HasilInput">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background2"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Resep Baru"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:text="Nama Resep "/>
+
+        <TextView
+            android:id="@+id/shownamaresep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:layout_marginLeft="20dp"
+            android:text="Nama Resep" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3pt"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:text="Ingredients "/>
+
+        <TextView
+            android:id="@+id/showingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:layout_marginLeft="20dp"
+            android:text="Ingredients" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3pt"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:text="Step by Step "/>
+
+        <TextView
+            android:id="@+id/showstepbystep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:layout_marginLeft="20dp"
+            android:text="Step by Step" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3pt"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:text="Nutrition Info "/>
+
+        <TextView
+            android:id="@+id/shownutritioninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:layout_marginLeft="20dp"
+            android:text="Nutrition Info"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3pt"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:text="Jenis Kue "/>
+
+        <TextView
+            android:id="@+id/showjeniskue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:layout_marginLeft="20dp"
+            android:text="Jenis Kue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3pt"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:text="Cara Memasak "/>
+
+        <TextView
+            android:id="@+id/showcaramemasak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:layout_marginLeft="20dp"
+            android:text="Cara Memasak" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3pt"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:text="Lama Memasak "/>
+
+        <TextView
+            android:id="@+id/showlamamemasak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:layout_marginLeft="20dp"
+            android:text="Lama Memasak" />
+
+
+        <TextView
+            android:id="@+id/showWaktuMemasak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:layout_marginLeft="20dp"
+            android:text="Waktu Memasak" />
+
+        <Button
+            android:id="@+id/btn_kembali"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Kembali"
+            android:textSize="7pt"
+            android:onClick="Kembali"/>
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:background="@color/hijau"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/namaresep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Nama Resep"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/label_caramemasak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namaresep"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:text="Cara Memasak "/>
+
+        <TextView
+            android:id="@+id/caramemasak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_caramemasak"
+            android:layout_marginTop="10dp"
+            android:text="Cara Memasak"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/label_nutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caramemasak"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:text="Info Nutrisi "/>
+
+        <TextView
+            android:id="@+id/nutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_nutrition"
+            android:layout_marginTop="4dp"
+            android:text="Info Nutrisi"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/label_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nutrition"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:text="Ingredients "/>
+
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_ingredients"
+            android:layout_marginTop="4dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginLeft="15dp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

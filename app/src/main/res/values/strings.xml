@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FormResepBaking</string>
+    <string name="registrasi_resep">Registrasi Resep</string>
+    <string name="input_resep_baru">Input Resep Baru</string>
+    <string name="list_resep_kue">list resep kue</string>
+    <string name="judul">Resep Kue</string>
+    <string name="info">Tap to view, edit or delete data</string>
+    <string name="lihat">Lihat Data</string>
+    <string name="edit">Edit Data</string>
+    <string name="hapus">Hapus Data</string>
+    <string name="batal">Batal</string>
+</resources>

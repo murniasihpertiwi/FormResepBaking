@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background2"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="TAMBAH RESEP"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:text="Nama Resep"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editnamaresep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Nama Resep"
+            android:inputType="text"
+            android:nextFocusDown="@id/editingredients"
+            android:padding="15dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Ingredients"
+            android:inputType="textMultiLine"
+            android:nextFocusDown="@id/editstepbystep"
+            android:padding="15dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Step by Step"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editstepbystep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Cara Membuat"
+            android:inputType="textMultiLine"
+            android:nextFocusDown="@id/editnutrisi"
+            android:padding="15dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Nutrition Info"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editnutrisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Info Nutrisi"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Jenis Kue"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiocookie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cookies" />
+
+            <RadioButton
+                android:id="@+id/radiobolu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bolu" />
+
+            <RadioButton
+                android:id="@+id/radiobrownnies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brownies" />
+
+            <RadioButton
+                android:id="@+id/radiodonat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donat" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Cara Memasak"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/kategori1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:text="Panggang" />
+
+                <CheckBox
+                    android:id="@+id/kategori2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:text="Kukus" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/kategori3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:text="Goreng" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Lama Memasak"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <SeekBar
+            android:id="@+id/seekBarLamaMemasak"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:min="1"
+            android:padding="15dp"
+            android:progress="30" />
+
+        <TextView
+            android:id="@+id/seekbarWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:text="30"
+            android:textSize="15dp" />
+
+
+        <RadioGroup
+            android:id="@+id/rgWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMenit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menit" />
+
+            <RadioButton
+                android:id="@+id/radioJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam" />
+
+            <RadioButton
+                android:id="@+id/radioHari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hari" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:onClick="buttonsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="45dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/teal_700"
+            android:text="SUBMIT"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+</ScrollView>
+
